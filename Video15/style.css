@@ -1,0 +1,10 @@
+/* Way of add css in html
+1.Inline CSS - Use through style attributes
+Internal CSS - Use Style tag 
+External CSS - use .css file */
+
+
+h1 {
+    color: rgb(57, 151, 120);
+    background-color: rgb(215, 215, 23);
+}
