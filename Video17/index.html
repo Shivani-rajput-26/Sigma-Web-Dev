@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box
+        {
+            background-color: rgb(5, 166, 112);
+        }
+        .box1{
+            color: rgb(182, 215, 115);
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box; /*= It means this is the size of border, padding and content */
+        }
+        .box2{
+            color: rebeccapurple;
+            padding: 10px;
+            margin: 25px; /* Margin collapse */
+            border: 2px solid rgb(224, 184, 214);
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>
