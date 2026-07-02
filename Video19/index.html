@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Fonts, Text & Color Properties</title>
+    <title>CSS Fonts, Text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            line-height: 1.3;
+            letter-spacing: normal;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 500; */
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: cornflowerblue;
+            /* text-decoration-style: solid; */
+            text-decoration-thickness: 7px;
+            /* text-indent: 25px; */
+        }
+        .lorem{
+            border: 2px rgb(186, 94, 14);
+            width: 145px;
+            /* text-overflow: ellipsis;
+            overflow: hidden; */
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+        <h1>Fonts</h1>
+        <h2>about Fonts</h2>
+        <p>This is a video on font</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui consequatur minus sequi iure debitis dolorum, unde cupiditate ut, consectetur neque aliquam enim veniam aliquid eum velit expedita sapiente error!</p>
+    </div>
 </body>
+
 </html>
