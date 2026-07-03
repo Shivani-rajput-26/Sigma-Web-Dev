@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+    <style>
+        /* Specificity of this h1 is 1 */
+        h1 {
+            color: red;
+        }
+
+        /* Specificity of this h1 is 1 + 10=11 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* Specificity of this h1 is 10 */
+        .cred {
+            color: black;
+        }
+
+        /* Specificity of this h1 is 10 */
+        .cpurple {
+            color: purple
+        }
+
+        /*Attribute Selector = Specificity of this h1 is 10 */
+        /* [data-x="a"]{
+            color: cadetblue;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
+<!-- Cascading Algorithm 
+ 1. position and order of appearance
+ 2. Specificity like id is inline style > id > class or attribute selector > element selector > universal selector
+ 3. Origin = User agent stylesheet iska mtlb jo chees browser khud lga deta h 
+ 4. Importance = When we write important it means uski priority sbse jyada ho jaati h, vo inline style ko bhi override kr dega easily-->
+
+
+ <!-- Calculate specificity 
+  The specificty is this selector is 1+10+10+10+10 = 41
+  a.harryclass.rohan-class[href]:hover{
+  color: red;} -->
