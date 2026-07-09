@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise29</title>
+    <!-- ss.png is file which contains a card image. write html and css code to designthis card. Use HTML Hastag -->
+</head>
+<style>
+    .box {
+        padding: 10px;
+        margin: auto;
+        border: 2px solid #8888;
+        border-radius: 10px;
+        height: 41vw;
+        width: 45vh;
+    }
+
+    .imge {
+        border-radius: 10px;
+        width: 330px;
+        height: 250px;
+    }
+
+    .tags{
+        display: flex;
+        padding: 10px;
+        margin: 10px 0;
+        gap: 10px;
+    }
+    .tags Span{
+        border: 1px solid #8888;
+        border-radius: 20px;
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+    .Space{
+        display: flex;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .btn{
+        text-align: center;
+    }
+    
+    .read-btn{
+        background-color: rgb(199, 225, 246);
+        color: #5f82cf;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .read-btn:hover{
+        background-color: #2563eb;
+        color: white;
+        transform:scale(1.05);
+    }
+    
+</style>
+
+<body>
+    <div class="box">
+        <img src="ss.2.jpg" alt="Swiyzerland Image" class="imge">
+
+        <div class="tags">
+            <span> Nature </span>
+            <span> Lake </span>
+        </div>
+
+        <h2>About Switzerland</h2>
+
+        <p>Switzerland's many small valleys separated by high mountains often host unique ecologies. The mountainous regions themselves offer a rich range of plants not found at other altitudes. . The climatic, geological and topographical conditions of the alpine region make for a fragile ecosystem that is particularly sensitive to climate change. It scored well in parameters including air pollution, sanitation and drinking water, waste management, and climate change mitigation.</p>
+
+        <div class="btn">
+            <button class="read-btn">Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
