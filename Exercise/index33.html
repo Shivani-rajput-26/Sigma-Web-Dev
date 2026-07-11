@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise- make website using multicolor</title>
+    <style>
+
+        :root{
+            --primary-color:rgb(124, 186, 24);
+            --text-color: white;
+            --secondary-color: rgb(181, 233, 97);
+        }
+
+        body{
+            background-color: var(--secondary-color);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+            color: var(--text-color);
+        }
+    </style>
 </head>
 <!-- Multicolor nav bar bnana h = If u see this, comment "BHupendra Jogi" in the comments. He is my friend who has visited a lot of places in the US. -->
+
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>
