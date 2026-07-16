@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise - Navbarusing flexbox</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-
+        .logo img {
+            width: 164px;
         }
+
         nav {
-            margin: 30px;
-            padding: 30px;
             display: flex;
-            justify-content: center;
-            border: 2px solid black;
-            background-color: rgb(246, 244, 244);
-            font-size: 17px;
-            font-style: inherit;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
         }
     </style>
 </head>
@@ -27,12 +30,20 @@
 <body>
     <header>
         <nav>
-            Product
-            Buy
-            Renew
-            Support
-            Learn
-            Company
+            <div class="logo">
+                <img src="ss3.png" alt="Logo img">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Produsts</li>
+                    <li>Buy</li>
+                    <li>Renew</li>
+                    <li>Support</li>
+                    <li>Learn</li>
+                    <li>Company</li>
+                </ul>
+            </div>
+
         </nav>
     </header>
 </body>
