@@ -10,7 +10,7 @@ console.log(a[6])
 
 console.log(a.length)
 
-let name = "Shivani"
+let name = "Shivani"  // string - immuatbele
 let friend = "Deepak"
 console.log("Her name is " + name +" and her friend name is " + friend)
 console.log(`Her name is ${name} and her friend name is ${friend}`)
